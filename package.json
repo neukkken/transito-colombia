@@ -1,0 +1,69 @@
+{
+  "name": "transito-colombia",
+  "version": "1.0.1",
+  "description": "Librería TypeScript completa del Código Nacional de Tránsito de Colombia (Ley 769/2002, Res. 3027/2010, Ley 1696/2013, Ley 2161/2021, Ley 2251/2022). Incluye catálogo completo de infracciones (A-J), matriz de alcoholemia, cálculo de multas y descuentos, plazos legales de caducidad/prescripción, validación de placas y licencias, y modelos para control de infracciones por vehículos y usuarios.",
+  "main": "./dist/index.js",
+  "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": {
+        "types": "./dist/index.d.mts",
+        "default": "./dist/index.mjs"
+      },
+      "require": {
+        "types": "./dist/index.d.ts",
+        "default": "./dist/index.js"
+      }
+    }
+  },
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsup",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "typecheck": "tsc --noEmit",
+    "prepublishOnly": "npm run build && npm test"
+  },
+  "keywords": [
+    "transito",
+    "colombia",
+    "simit",
+    "runt",
+    "infracciones",
+    "comparendos",
+    "multas",
+    "codigo-nacional-de-transito",
+    "ley-769",
+    "ley-1696",
+    "ley-2251",
+    "fotomultas",
+    "placas",
+    "licencias",
+    "alcoholemia",
+    "typescript"
+  ],
+  "author": "Santiago",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/neukkken/transito-colombia.git"
+  },
+  "bugs": {
+    "url": "https://github.com/neukkken/transito-colombia/issues"
+  },
+  "homepage": "https://github.com/neukkken/transito-colombia#readme",
+  "publishConfig": {
+    "access": "public"
+  },
+  "devDependencies": {
+    "@types/node": "^22.0.0",
+    "tsup": "^8.5.1",
+    "typescript": "^5.8.2",
+    "vitest": "^1.6.0"
+  }
+}
