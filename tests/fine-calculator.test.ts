@@ -10,6 +10,27 @@ describe('Calculadora de Multas y Tarifas (fine-calculator)', () => {
     const t2023 = getTariffForYear(2023);
     expect(t2023.smmlv).toBe(1160000);
     expect(t2023.smldv).toBe(38667);
+
+    // Salario Mínimo 2026 según Decreto 159 de 2026 ($1.750.905 COP)
+    const t2026 = getTariffForYear(2026);
+    expect(t2026.smmlv).toBe(1750905);
+    expect(t2026.smldv).toBe(58364);
+  });
+
+  it('debe calcular correctamente el valor base para categorías C y D en 2026 con SMMLV $1.750.905', () => {
+    // Categoría C (15 SMLDV): 15 * 58364 = 875.460 COP -> redondeado a centenas: 875.500 COP
+    const c02_2026 = calculateFine('C02', { year: 2026 });
+    expect(c02_2026.smldvCount).toBe(15);
+    expect(c02_2026.baseAmountCop).toBe(875500);
+    expect(c02_2026.discount50Cop).toBe(437800);
+    expect(c02_2026.discount25Cop).toBe(656600);
+
+    // Categoría D (30 SMLDV): 30 * 58364 = 1.750.920 COP -> redondeado a centenas: 1.750.900 COP
+    const d02_2026 = calculateFine('D02', { year: 2026 });
+    expect(d02_2026.smldvCount).toBe(30);
+    expect(d02_2026.baseAmountCop).toBe(1750900);
+    expect(d02_2026.discount50Cop).toBe(875500);
+    expect(d02_2026.discount25Cop).toBe(1313200);
   });
 
   it('debe calcular correctamente el valor base para categorías C y D en 2024', () => {

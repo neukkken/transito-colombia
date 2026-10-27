@@ -48,12 +48,12 @@ export const HISTORICAL_TARIFFS: Readonly<Record<number, YearlyTariffConfig>> = 
   },
   2026: {
     year: 2026,
-    smmlv: 1550000,
-    smldv: Math.round(1550000 / 30), // 51667 COP
+    smmlv: 1750905, // Fijado mediante Decreto 159 de 2026 ($1.750.905 COP)
+    smldv: Math.round(1750905 / 30), // 58364 COP ($58.363,50 COP)
     uvt: 52800,
     uvb: 12200,
     monthlyUsuryInterestRate: 2.5
   }
 };
 
-export const CURRENT_DEFAULT_YEAR = 2024;
+export const CURRENT_DEFAULT_YEAR = 2026;

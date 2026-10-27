@@ -1,6 +1,6 @@
 {
   "name": "transito-colombia",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Librería TypeScript completa del Código Nacional de Tránsito de Colombia (Ley 769/2002, Res. 3027/2010, Ley 1696/2013, Ley 2161/2021, Ley 2251/2022). Incluye catálogo completo de infracciones (A-J), matriz de alcoholemia, cálculo de multas y descuentos, plazos legales de caducidad/prescripción, validación de placas y licencias, y modelos para control de infracciones por vehículos y usuarios.",
   "main": "./dist/index.js",
   "module": "./dist/index.mjs",

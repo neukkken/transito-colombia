@@ -140,7 +140,7 @@ La libreria almacena los parametros de SMMLV, SMLDV, UVT y tasa de usura morator
 * **2023**: SMMLV $1.160.000 COP | SMLDV $38.667 COP | UVT $42.412 COP
 * **2024**: SMMLV $1.300.000 COP | SMLDV $43.333 COP | UVT $47.065 COP
 * **2025**: SMMLV $1.423.500 COP | SMLDV $47.450 COP | UVT $49.799 COP
-* **2026 (Proyectado)**: SMMLV $1.550.000 COP | SMLDV $51.667 COP | UVT $52.800 COP
+* **2026**: SMMLV $1.750.905 COP (Decreto 159 de 2026) | SMLDV $58.364 COP | UVT $52.800 COP
 
 ### Plazos de Descuento y Cursos Pedagogicos
 
